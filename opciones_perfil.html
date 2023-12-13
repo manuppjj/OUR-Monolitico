@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+    <link href="css/carrousel.css" rel="stylesheet" type="text/css" />
+    <link href="css/contactenos.css" rel="stylesheet" type="text/css" />
+    <link href="css/perfil.css" rel="stylesheet" type="text/css" />
+    <link href="css/mi_cuenta.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/712575d4a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="img/logo1.png" />
+
+    <title>Our Little World</title>
+  </head>
+
+  <body>
+    <div class="redes">
+
+      <a href="https://www.facebook.com/"><img src="icons/facebook.png" alt=""></a>
+      <a href="https://www.instagram.com/"><img src="icons/instagram.png" alt=""></a>
+      <a href="https://twitter.com/"><!--<img src="icons/twitter.png" alt="">--> <svg viewBox="0 0 24 24"
+          aria-hidden="true" style="background-color: rgb(255, 255, 255) ; border-radius: 10px; border:solid 2px; "
+          class="r-k200y  r-1nao33i r-4qtqp9 r-yyyyoo r-5sfk15 r-dnmrzs r-kzbkwu r-bnwqim r-1plcrui r-lrvibr">
+          <g>
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+            </path>
+          </g>
+        </svg></a>
+  
+  
+    </div>
+
+    <div class="container">
+      <header class="superior">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo1.png" alt="" /></a>
+        </div>
+        <nav class="menu">
+          <button onclick="location.href='index.html'">Inicio</button>
+          <button onclick="location.href='grados.html'">Grados</button>
+          <button onclick="location.href='foro.html'">Preguntas</button>
+
+          <button onclick="location.href='contactenos.html'">
+            Contactenos
+          </button>
+        </nav>
+        <div class="user">
+          <a href="perfil.html"><img src="img/usuario.png" alt="" /></a>
+        </div>
+      </header>
+
+      <div class="caja_buscar">
+        <div class="busqueda">
+          <input type="text" placeholder="Buscar" required />
+          <div class="btn">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="total_mi_cuenta">
+        <div class="mi_cuenta">
+          <div class="ver_perfil">
+            <img src="img/foto-removebg-preview.png" alt="" />
+            <h3>Juan Manuel Timana Polo</h3>
+            <a href="perfil.html"><p>Ver el perfil</p></a>
+          </div>
+          <div class="opciones_cuenta">
+            <ul>
+              <li id="li_cuenta" onclick="Mostrar_Ocultar_Cuenta();">
+                <img src="img/usuario_color.png" alt="" /> Cuenta
+              </li>
+              <div id="info_personal">
+                <h1><img src="img/usuario_color.png" alt="" />Cuenta</h1>
+                <p>Nombre de usuario</p>
+                <input type="text" placeholder="Admin" />
+                <p>Nombre</p>
+                <input type="text" placeholder="Juan Manuel" />
+                Apellidos
+                <input type="text" placeholder="Timana Polo" />
+                Dirección de correo electrónico
+                <input type="text" placeholder="jmtimana4@misena.edu.co" />
+
+                <button>Actualizar la cuenta</button>
+              </div>
+
+              <li id="li_contraseña" onclick="Mostrar_Ocultar_Contraseña();">
+                <img src="img/contraseña.png" alt="" />Cambiar la contraseña
+              </li>
+                <div id="cambiar_contraseña">
+                  <h1>
+                    <img src="img/contraseña.png" alt="" />Cambiar la contraseña
+                  </h1>
+                  <p>contraseña actual</p>
+                  <input type="contraseña" placeholder="******" />
+                  <p>Nueva contraseña</p>
+                  <input type="contraseña" placeholder="*********" />
+                  Confirmar la contraseña
+                  <input type="contraseña" placeholder="*********" />
+
+                  <button>Actualizar la contraseña</button>
+                </div>
+              </li>
+
+              <li id="li_borrar" onclick="Mostrar_Ocultar_Borrar_Cuenta()">
+                <img src="img/caneca_basura.png" alt="" />borrar la cuenta
+              </li>
+                <div id="borrar_cuenta">
+                  <h1>
+                    <img src="img/caneca_basura.png" alt="" />Borrar la cuenta
+                  </h1>
+                  <p>
+                    ¿Seguro que quieres borrar tu cuenta? Esto borrará todos los
+                    datos de tu cuenta en el sitio. Para borrar tu cuenta,
+                    introduce a continuación tu contraseña.
+                  </p>
+
+                  Contraseña
+                  <input type="text" placeholder="" />
+
+                  <button>Borrar la cuenta</button>
+                </div>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+
+      <footer class="pie">
+        <div class="niña">
+          <img src="img/pieniña.png" alt="" />
+        </div>
+        <div class="content_footer">
+          <p class="abajo">Our Little World</p>
+
+          <ul>
+            <li>
+              <img src="icons/llamada-telefonica.png" alt="" />Servicio al
+              cliente: 01 8000-453-766
+            </li>
+            <li>
+              <img src="icons/icons8-whatsapp-48.png" alt="" /> 3107141132 -
+              3217437759
+            </li>
+            <li>
+              <img src="icons/gmail.png" alt="" />E-Mail jmtimana4@misena.edu.co
+            </li>
+          </ul>
+          <ul>
+            <li><img src="icons/mapa.png" alt="" />Popayan - Colombia</li>
+            <li>
+              <img src="icons/reloj-de-pared.png" alt="" />9:00 am a 6:00 p.m.
+            </li>
+          </ul>
+        </div>
+        <div class="niño">
+          <img src="img/pieniño.png" alt="" />
+        </div>
+      </footer>
+    </div>
+
+    <!-- <div class="kkk">
+      <button class="hola">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+    </div> -->
+    <script src="js/perfil_opciones.js"></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+    <link href="css/carrousel.css" rel="stylesheet" type="text/css" />
+    <link href="css/contactenos.css" rel="stylesheet" type="text/css" />
+    <link href="css/perfil.css" rel="stylesheet" type="text/css" />
+    <link href="css/editar_perfil.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/712575d4a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="img/logo1.png" />
+
+    <title>Our Little World</title>
+  </head>
+
+  <body>
+    <div class="redes">
+      <a href="https://www.facebook.com/"
+        ><img src="icons/facebook.png" alt=""
+      /></a>
+      <a href="https://www.instagram.com/"
+        ><img src="icons/instagram.png" alt=""
+      /></a>
+      <a href="https://twitter.com/"
+        ><!--<img src="icons/twitter.png" alt="">-->
+        <svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          style="
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            border: solid 2px;
+          "
+          class="r-k200y r-1nao33i r-4qtqp9 r-yyyyoo r-5sfk15 r-dnmrzs r-kzbkwu r-bnwqim r-1plcrui r-lrvibr"
+        >
+          <g>
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+            ></path>
+          </g>
+        </svg>
+      </a>
+    </div>
+
+    <div class="container">
+      <header class="superior">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo1.png" alt="" /></a>
+        </div>
+        <nav class="menu">
+          <button onclick="location.href='index.html'">Inicio</button>
+          <button onclick="location.href='grados.html'">Grados</button>
+          <button onclick="location.href='foro.html'">Foro</button>
+
+          <button onclick="location.href='contactenos.html'">
+            Contactenos
+          </button>
+        </nav>
+        <div class="user">
+          <a href="perfil.html"><img src="img/usuario.png" alt="" /></a>
+        </div>
+      </header>
+
+      <div class="caja_buscar">
+        <div class="busqueda">
+          <input type="text" placeholder="Buscar" required />
+          <div class="btn">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+      </div>
+
+      <br /><br /><br />
+
+      <div class="perfil">
+        <button id="button_desplegable_perfil" onclick="Mostrar_Ocultar();">
+          <ul id="left_opciones">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </button>
+
+        <div class="portada">
+          <img src="img/imagen-cambio-portada.png" alt="" />
+          <p>cambiar tu foto de portada</p>
+        </div>
+        <div class="foto_perfil">
+          <div class="foto">
+            <img src="img/camara_foto_portada.png" alt="" />
+          </div>
+          <p>
+            <span id="name_perfil"> Juan Manuel Timana Polo</span>
+            <br /><br />
+            <span id="span_rol">Admin </span>
+          </p>
+        </div>
+
+        <div class="publicaciones">
+          <button>
+            <img src="img/usuario-informacion.png" alt="" /> informacion
+          </button>
+          <p><img src="img/comentario.png" alt="" />Comentarios</p>
+        </div>
+
+        <div class="actualizar_buttons">
+          <button class="actualizar">Actualizar el Perfil</button>
+          <button class="cancelar" onclick="location.href ='perfil.html' ">
+            Cancelar
+          </button>
+        </div>
+      </div>
+
+      <br /><br /><br />
+
+      <footer class="pie">
+        <div class="niña">
+          <img src="img/pieniña.png" alt="" />
+        </div>
+        <div class="content_footer">
+          <p class="abajo">Our Little World</p>
+
+          <ul>
+            <li>
+              <img src="icons/llamada-telefonica.png" alt="" />Servicio al
+              cliente: 01 8000-453-766
+            </li>
+            <li>
+              <img src="icons/icons8-whatsapp-48.png" alt="" /> 3107141132 -
+              3217437759
+            </li>
+            <li>
+              <img src="icons/gmail.png" alt="" />E-Mail jmtimana4@misena.edu.co
+            </li>
+          </ul>
+          <ul>
+            <li><img src="icons/mapa.png" alt="" />Popayan - Colombia</li>
+            <li>
+              <img src="icons/reloj-de-pared.png" alt="" />9:00 am a 6:00 p.m.
+            </li>
+          </ul>
+        </div>
+        <div class="niño">
+          <img src="img/pieniño.png" alt="" />
+        </div>
+      </footer>
+    </div>
+
+    <!-- <div class="kkk">
+      <button class="hola">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+    </div> -->
+    <script src="js/perfil_opciones.js"></script>
+  </body>
+</html>
